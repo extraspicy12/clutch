@@ -1,0 +1,205 @@
+@import "settings";
+
+a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+header {
+  text-align:center;
+  img#logo {
+    width: 50%;
+    @media(max-width: $small-breakpoint) {
+      width: 100%;
+      padding: 15px 0;
+    }
+    padding: 30px 0 75px;
+  }
+}
+
+nav.nav-bar {
+  background: none;
+  text-align: center;
+  border-bottom: 3px solid $secondary-color;
+  font-size: 0;
+  ul.nav-container {
+    text-align: center !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    @media(max-width: $small-breakpoint) {
+      height: auto;
+      width: 100%;
+    }
+    li {
+      list-style: none;
+      float: left;
+      position: relative;
+      text-align: center;
+      height: 100%;
+      margin: 0 10px;
+      display: inline-block;
+      @media(max-width: $small-breakpoint) {
+        height: 40px;
+        width: 50%;
+      }
+      a {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 20px;
+        line-height: 20px;
+        color: $primary-color;
+        border-bottom: 0px solid $primary-color;
+        // border-top: 0px solid $primary-color;
+        &:hover {
+          border-width: 4px;
+          font-weight: 700;
+        }
+        @media(max-width: $small-breakpoint) {
+          &:hover {
+            background-color: $secondary-color;
+            color: #fff;
+            border-width: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 3px solid;
+    @media (max-width: $small-breakpoint) {
+      text-align: center !important;
+    }
+    div.icon {
+      font-size: 50px;
+      text-align: center;
+      i.fa {
+        height: 150px;
+        width: 150px;
+        padding: 50px;
+        border-radius: 100px;
+        background-color: #fff;
+        color: $primary-color;
+      }
+    }
+    &:nth-child(odd) {
+      text-align: left;
+      background-color: $primary-color;
+      color: #fff;
+      h1,h2,h3,p {
+        color: #fff;
+      }
+      border-bottom-color: $secondary-color;
+    }
+    &:nth-child(even) {
+      text-align: right;
+      background-color: $smoke;
+      color: $primary-color;
+      h1,h2,h3,p {
+        color: $primary-color;
+      }
+      border-bottom-color: #fff;
+    }
+    &.callout {
+      text-align: center;
+    }
+    &:nth-last-child(3) {
+      border-bottom: none;
+    }
+    &#contact {
+      // background-color: #fff;
+      // h1,h2,h3,p {
+      //   color: $secondary-color;
+      // }
+      // color: $secondary-color;
+      border-top: 3px solid $secondary-color;
+      .contact-form {
+        background-color: #fff;
+        color: $primary-color;
+        padding: 30px;
+        border-radius: 10px;
+        input, textarea {
+          background-color: $smoke;
+        }
+        border: 1px solid $secondary-color;
+        box-shadow: 0 17.5px 20px -20px #222222;
+        input.button {
+          background-color: #fff;
+          border: 1px solid $secondary-color;
+          color: $secondary-color;
+          border-radius: 5px;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 10px;
+          &:hover {
+            background-color: $secondary-color;
+            color: #fff;
+          }
+        }
+        h3 { color: $secondary-color; text-align: center;}
+      }
+    }
+  }
+  footer#footer {
+  	background-color: $secondary-color;
+  	color: #ffffff;
+  	padding-top: 45px;
+  	padding-bottom: 60px;
+  	position: relative;
+  	float: left;
+  	// border-top: 5px solid #ccc;
+  	width: 100%;
+  	> div.row > div.columns > span {
+  		padding-bottom: 15px;
+  	}
+  	span, i {
+  		display: inline-block;
+  		vertical-align: middle;
+  	}
+  	a {
+  		color: #fff;
+  	}
+  	a:hover {
+  		color: $primary-color;
+  	}
+  	.left {
+  		text-align: left;
+  		@media screen and (max-width: 40em) {
+  			text-align: center;
+  		}
+  		span.copyright {
+  			font-weight: 700;
+  		}
+  		span.madeby {
+  			font-size: .75rem;
+  		}
+
+  	}
+  	.right {
+  		text-align: right;
+  		@media screen and (max-width: 40em) {
+  			text-align: center;
+  		}
+  		span.socialmedia {
+  			a {
+  				padding-left: 5px;
+  			}
+  			a:first-of-type {
+  				padding-left: 15px;
+  			}
+  			.fa {
+  				font-size: 2.0rem;
+  			}
+  		}
+  	}
+  }
+}

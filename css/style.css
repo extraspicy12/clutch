@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+/* line 3, ../scss/style.scss */
+a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+/* line 10, ../scss/style.scss */
+header {
+  text-align: center;
+}
+/* line 12, ../scss/style.scss */
+header img#logo {
+  width: 50%;
+  padding: 30px 0 75px;
+}
+@media (max-width: 40em) {
+  /* line 12, ../scss/style.scss */
+  header img#logo {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+
+/* line 22, ../scss/style.scss */
+nav.nav-bar {
+  background: none;
+  text-align: center;
+  border-bottom: 3px solid #40C21E;
+  font-size: 0;
+}
+/* line 27, ../scss/style.scss */
+nav.nav-bar ul.nav-container {
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  height: 44px;
+}
+@media (max-width: 40em) {
+  /* line 27, ../scss/style.scss */
+  nav.nav-bar ul.nav-container {
+    height: auto;
+    width: 100%;
+  }
+}
+/* line 38, ../scss/style.scss */
+nav.nav-bar ul.nav-container li {
+  list-style: none;
+  float: left;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  margin: 0 10px;
+  display: inline-block;
+}
+@media (max-width: 40em) {
+  /* line 38, ../scss/style.scss */
+  nav.nav-bar ul.nav-container li {
+    height: 40px;
+    width: 50%;
+  }
+}
+/* line 50, ../scss/style.scss */
+nav.nav-bar ul.nav-container li a {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2E5B89;
+  border-bottom: 0px solid #2E5B89;
+}
+/* line 58, ../scss/style.scss */
+nav.nav-bar ul.nav-container li a:hover {
+  border-width: 4px;
+  font-weight: 700;
+}
+@media (max-width: 40em) {
+  /* line 63, ../scss/style.scss */
+  nav.nav-bar ul.nav-container li a:hover {
+    background-color: #40C21E;
+    color: #fff;
+    border-width: 0px;
+  }
+}
+
+/* line 75, ../scss/style.scss */
+main section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-bottom: 3px solid;
+}
+@media (max-width: 40em) {
+  /* line 75, ../scss/style.scss */
+  main section {
+    text-align: center !important;
+  }
+}
+/* line 82, ../scss/style.scss */
+main section div.icon {
+  font-size: 50px;
+  text-align: center;
+}
+/* line 85, ../scss/style.scss */
+main section div.icon i.fa {
+  height: 150px;
+  width: 150px;
+  padding: 50px;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #2E5B89;
+}
+/* line 94, ../scss/style.scss */
+main section:nth-child(odd) {
+  text-align: left;
+  background-color: #2E5B89;
+  color: #fff;
+  border-bottom-color: #40C21E;
+}
+/* line 98, ../scss/style.scss */
+main section:nth-child(odd) h1, main section:nth-child(odd) h2, main section:nth-child(odd) h3, main section:nth-child(odd) p {
+  color: #fff;
+}
+/* line 103, ../scss/style.scss */
+main section:nth-child(even) {
+  text-align: right;
+  background-color: #EEEEEE;
+  color: #2E5B89;
+  border-bottom-color: #fff;
+}
+/* line 107, ../scss/style.scss */
+main section:nth-child(even) h1, main section:nth-child(even) h2, main section:nth-child(even) h3, main section:nth-child(even) p {
+  color: #2E5B89;
+}
+/* line 112, ../scss/style.scss */
+main section.callout {
+  text-align: center;
+}
+/* line 115, ../scss/style.scss */
+main section:nth-last-child(3) {
+  border-bottom: none;
+}
+/* line 118, ../scss/style.scss */
+main section#contact {
+  border-top: 3px solid #40C21E;
+}
+/* line 125, ../scss/style.scss */
+main section#contact .contact-form {
+  background-color: #fff;
+  color: #2E5B89;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #40C21E;
+  box-shadow: 0 17.5px 20px -20px #222222;
+}
+/* line 130, ../scss/style.scss */
+main section#contact .contact-form input, main section#contact .contact-form textarea {
+  background-color: #EEEEEE;
+}
+/* line 135, ../scss/style.scss */
+main section#contact .contact-form input.button {
+  background-color: #fff;
+  border: 1px solid #40C21E;
+  color: #40C21E;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+/* line 143, ../scss/style.scss */
+main section#contact .contact-form input.button:hover {
+  background-color: #40C21E;
+  color: #fff;
+}
+/* line 148, ../scss/style.scss */
+main section#contact .contact-form h3 {
+  color: #40C21E;
+  text-align: center;
+}
+/* line 152, ../scss/style.scss */
+main footer#footer {
+  background-color: #40C21E;
+  color: #ffffff;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+/* line 161, ../scss/style.scss */
+main footer#footer > div.row > div.columns > span {
+  padding-bottom: 15px;
+}
+/* line 164, ../scss/style.scss */
+main footer#footer span, main footer#footer i {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 168, ../scss/style.scss */
+main footer#footer a {
+  color: #fff;
+}
+/* line 171, ../scss/style.scss */
+main footer#footer a:hover {
+  color: #2E5B89;
+}
+/* line 174, ../scss/style.scss */
+main footer#footer .left {
+  text-align: left;
+}
+@media screen and (max-width: 40em) {
+  /* line 174, ../scss/style.scss */
+  main footer#footer .left {
+    text-align: center;
+  }
+}
+/* line 179, ../scss/style.scss */
+main footer#footer .left span.copyright {
+  font-weight: 700;
+}
+/* line 182, ../scss/style.scss */
+main footer#footer .left span.madeby {
+  font-size: .75rem;
+}
+/* line 187, ../scss/style.scss */
+main footer#footer .right {
+  text-align: right;
+}
+@media screen and (max-width: 40em) {
+  /* line 187, ../scss/style.scss */
+  main footer#footer .right {
+    text-align: center;
+  }
+}
+/* line 193, ../scss/style.scss */
+main footer#footer .right span.socialmedia a {
+  padding-left: 5px;
+}
+/* line 196, ../scss/style.scss */
+main footer#footer .right span.socialmedia a:first-of-type {
+  padding-left: 15px;
+}
+/* line 199, ../scss/style.scss */
+main footer#footer .right span.socialmedia .fa {
+  font-size: 2.0rem;
+}
